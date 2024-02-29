@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "validatebiomes",
+  "version": "${version}",
+  "name": "Validate Biomes",
+  "description": "",
+  "authors": [],
+  "license": "MIT",
+  "icon": "assets/validatebiomes/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "server": [
+      "de.saschat.validatebiomes.ValidateBiomes"
+    ]
+  },
+  "mixins": [
+    "validatebiomes.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
